@@ -71,6 +71,8 @@ install(FILES demo/demo.launch.xml
   DESTINATION share/${PROJECT_NAME}/launch)
 install(PROGRAMS demo/publish_demo_data
   DESTINATION lib/${PROJECT_NAME})
+install(FILES demo/demo.rviz
+  DESTINATION share/${PROJECT_NAME}/demo)
 
 pluginlib_export_plugin_description_file(rviz_common plugin_description.xml)
 ament_package()
